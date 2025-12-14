@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from logistic_regression import gradient_descent
+from src.logistic_regression import gradient_descent
 
 data = pd.read_csv("../data/DMV_Written_Tests.csv")
 
@@ -21,3 +21,4 @@ np.save("mean.npy", mean)
 np.save("std.npy", std)
 
 print("Training completed!")
+
