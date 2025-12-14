@@ -1,5 +1,5 @@
 import numpy as np
-from logistic_regression import sigmoid
+from src.logistic_regression import sigmoid
 
 theta = np.load("theta.npy")
 mean = np.load("mean.npy")
@@ -11,3 +11,4 @@ test = np.insert(test, 0, 1)
 
 probability = sigmoid(test @ theta)
 print("Probability of passing:", probability[0])
+
